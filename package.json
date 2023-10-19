@@ -1,0 +1,17 @@
+{
+  "name": "@namespace/root",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "craco": "^0.0.3",
+    "lerna": "^7.4.0"
+  },
+  "scripts": {
+    "start": "lerna exec --scope @namespace/app -- yarn start"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  }
+}
